@@ -12,8 +12,7 @@
     "antd-mobile": "^5.39.0",
     "next": "15.2.4",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-vant": "^3.3.5"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
