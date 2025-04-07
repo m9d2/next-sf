@@ -69,18 +69,16 @@ function GeneratedForm(props: { onSubmit?: (name: string, phone: string, address
                 }
             }}
             footer={
-                <div style={{margin: '16px 8px 0'}}>
-                    <Button style={{backgroundColor: '#3f45ff'}} color='primary' type='submit' block
-                            loading={props.loading} loadingText='正在加载'>
-                        生成截图
-                    </Button>
-                </div>
+                <Button style={{backgroundColor: '#3f45ff'}} color='primary' type='submit' block
+                        loading={props.loading} loadingText='正在加载'>
+                    生成截图
+                </Button>
             }
         >
             <Form.Item
                 name='name'
-                label='姓名'
-                layout='vertical'
+                label='姓名：'
+                layout='horizontal'
             >
                 <Input
                     placeholder='请输入姓名'
@@ -89,8 +87,8 @@ function GeneratedForm(props: { onSubmit?: (name: string, phone: string, address
             </Form.Item>
             <Form.Item
                 name='phone'
-                label='手机号'
-                layout='vertical'
+                label='手机号：'
+                layout='horizontal'
             >
                 <Input
                     placeholder='请输入手机号'
@@ -99,8 +97,8 @@ function GeneratedForm(props: { onSubmit?: (name: string, phone: string, address
             </Form.Item>
             <Form.Item
                 name='address'
-                label='地址'
-                layout='vertical'
+                label='地址：'
+                layout='horizontal'
             >
                 <Input
                     placeholder='请输入地址'
@@ -126,6 +124,7 @@ export default function Home() {
             <div className={styles.tipContainer}>
                 <span className="tip">小提示🌀：图片生成后长按保存图片到相册</span>
             </div>
+
             <ImagePreview
                 props={imageProps}
                 onImageGenerated={() => setLoading(false)}
