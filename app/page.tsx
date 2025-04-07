@@ -59,7 +59,7 @@ function GeneratedForm(props: { onSubmit?: (name: string, phone: string, address
 
     return (
         <Form
-            style={{margin: '16px 16px'}}
+            style={{margin: '16px 16px 0'}}
             layout='vertical'
             form={form}
             onFinish={() => {
@@ -70,7 +70,8 @@ function GeneratedForm(props: { onSubmit?: (name: string, phone: string, address
             }}
             footer={
                 <div style={{margin: '16px 8px 0'}}>
-                    <Button color='primary' type='submit' block loading={props.loading}>
+                    <Button style={{backgroundColor: '#3f45ff'}} color='primary' type='submit' block
+                            loading={props.loading} loadingText='正在加载'>
                         生成截图
                     </Button>
                 </div>
@@ -122,6 +123,9 @@ export default function Home() {
     return (
         <div className={styles.page}>
             <GeneratedForm onSubmit={handleSubmit} loading={loading}/>
+            <div className={styles.tipContainer}>
+                <span className="tip">小提示🌀：图片生成后长按保存图片到相册</span>
+            </div>
             <ImagePreview
                 props={imageProps}
                 onImageGenerated={() => setLoading(false)}

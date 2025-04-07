@@ -1,6 +1,7 @@
 :root {
   --background: #f4f6f9;
   --foreground: #171717;
+  --adm-button-background-color:#3f45ff;
 }
 
 @media (prefers-color-scheme: dark) {

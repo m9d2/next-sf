@@ -6,9 +6,10 @@
 }
 
 .tipContainer {
-  margin-top: 16px;
-  font-size: 0.9em;
+  /*margin-top: 16px;*/
+  font-size: 1em;
   color: rgba(0, 0, 0, 0.6);
+  padding: 0 16px 16px;
 }
 
 .tipContainer .tip {
@@ -24,5 +25,5 @@
 
 .image {
   padding: 0 16px 16px;
-  width: 80%;
+  width: 100%;
 }
