@@ -69,7 +69,7 @@ function GeneratedForm(props: { onSubmit?: (name: string, phone: string, address
                 }
             }}
             footer={
-                <Button style={{backgroundColor: '#3f45ff'}} color='primary' type='submit' block
+                <Button style={{backgroundColor: '#3f45ff', border: 'none'}} color='primary' type='submit' block
                         loading={props.loading} loadingText='正在加载'>
                     生成截图
                 </Button>
